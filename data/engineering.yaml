@@ -1,0 +1,13 @@
+projects:
+  - title: "QuAIRKit"
+    subtitle: "Quantum AI software toolkit"
+    description: "QuAIRKit is a quantum AI software toolkit. It is presented here as an engineering contribution related to quantum computing and AI-assisted quantum workflows."
+    link: "https://github.com/QuAIR/QuAIRKit"
+    image: "/images/quairkit.svg"
+    tags: ["Quantum AI", "Quantum Software", "Research Engineering", "Python"]
+  - title: "AutoQEC"
+    subtitle: "AI-assisted engineering system for quantum error correction"
+    description: "AutoQEC is an AI-assisted research and engineering system for quantum error correction, exploring automated workflows for neural predecoders and hybrid decoding pipelines."
+    link: "/engineering/"
+    image: "/images/autoqec.svg"
+    tags: ["Quantum Error Correction", "AI-assisted Engineering", "Neural Decoding", "Auto-research", "Research Automation"]

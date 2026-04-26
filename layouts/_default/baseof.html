@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta name="author" content="Tengxiang Lin"><link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="{{ "images/abstract-avatar-tl.svg" | relURL }}" type="image/svg+xml">
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+</head><body>
+<header class="site-header"><a class="brand" href="{{ site.BaseURL }}"><img src="{{ "images/abstract-avatar-tl.svg" | relURL }}" alt="" class="brand-mark"><span>Tengxiang Lin</span></a>
+<nav class="nav" aria-label="Main navigation">{{ range site.Menus.main }}<a href="{{ .URL | relURL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>{{ end }}</nav></header>
+<main>{{ block "main" . }}{{ end }}</main>
+<footer class="footer" id="contact"><div><strong>Tengxiang Lin</strong><br>Ph.D. Student in Artificial Intelligence<br>Quantum AI Research Lab · HKUST(GZ)</div><div class="footer-links"><span>Email: tengxianglin23[at]gmail[dot]com</span><a href="https://github.com/tengxianglin" target="_blank" rel="noopener">GitHub</a><span>AI × Quantum Architecture × Quantum Computing</span></div></footer>
+</body></html>
