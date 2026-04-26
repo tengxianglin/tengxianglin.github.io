@@ -1,7 +1,7 @@
 ---
 title: "Building AI-assisted workflows for quantum research"
 date: 2026-04-26
-description: "A short introductory note on the scope of this blog."
+summary: "A short introductory note on the scope of this blog."
 ---
 This blog will collect short notes on AI-assisted quantum research, quantum architecture, quantum computing, and engineering workflows.
 

@@ -1,0 +1,88 @@
+title: 'Tengxiang Lin'
+baseURL: 'https://tengxianglin.github.io/'
+defaultContentLanguage: en
+hasCJKLanguage: false
+defaultContentLanguageInSubdir: false
+removePathAccents: true
+build:
+  writeStats: true
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: assets/hugo_stats\.json
+      target: css
+    - source: (postcss|tailwind)\.config\.js
+      target: css
+enableGitInfo: false
+summaryLength: 30
+pagination:
+  pagerSize: 10
+enableEmoji: true
+enableRobotsTXT: true
+ignoreFiles:
+  - '.ipynb_checkpoints$'
+  - '\\.Rmd$'
+  - '\\.Rmarkdown$'
+  - '_cache$'
+disableAliases: true
+outputFormats:
+  backlinks:
+    mediaType: application/json
+    baseName: backlinks
+    isPlainText: true
+    notAlternative: true
+  LLM:
+    mediaType: text/plain
+    baseName: llms
+    isPlainText: true
+    notAlternative: true
+    permalinkable: true
+outputs:
+  home: [HTML, RSS, LLM, backlinks]
+  section: [HTML, RSS]
+imaging:
+  resampleFilter: lanczos
+  quality: 90
+  anchor: smart
+  hint: picture
+timeout: 600000
+taxonomies:
+  author: authors
+  tag: tags
+  publication_type: publication_types
+markup:
+  _merge: deep
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderHooks:
+      link:
+        useEmbedded: fallback
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
+        title: true
+  highlight:
+    codeFences: true
+    noHl: false
+    lineNumbersInTable: false
+    noClasses: false
+    guessSyntax: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+security:
+  _merge: deep
+  funcs:
+    getenv:
+      - ^HUGO_
+      - ^CI$
+sitemap:
+  _merge: deep
+minify:
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepComments: true
+      keepSpecialComments: true

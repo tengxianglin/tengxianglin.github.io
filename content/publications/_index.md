@@ -1,4 +1,4 @@
 ---
-title: "Publications"
-description: "Selected publications and preprints."
+title: Publications
+summary: Selected publications and preprints.
 ---

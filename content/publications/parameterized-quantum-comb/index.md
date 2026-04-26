@@ -1,16 +1,32 @@
 ---
 title: "Parameterized quantum comb and simpler circuits for reversing unknown qubit-unitary operations"
-date: 2025-02-24
-year: 2025
-publication_type: "Journal article"
-group: "selected"
-selected: true
-authors: "Yin Mo, Lei Zhang, Yu-Ao Chen, Yingjian Liu, <strong>Tengxiang Lin</strong>, Xin Wang"
-venue: "npj Quantum Information, 11(1):32"
-image: "/images/publication-quantum-comb.svg"
+authors:
+  - Yin Mo
+  - Lei Zhang
+  - Yu-Ao Chen
+  - Yingjian Liu
+  - me
+  - Xin Wang
+date: "2025-02-24T00:00:00Z"
+publishDate: "2025-02-24T00:00:00Z"
+publication_types: ["article-journal"]
+publication: "*npj Quantum Information, 11*(1):32"
+summary: "A journal article on parameterized quantum combs and simpler circuits for reversing unknown qubit-unitary operations."
+abstract: "A journal article on parameterized quantum combs and simpler circuits for reversing unknown qubit-unitary operations."
+tags: ["Quantum Computing", "Quantum Algorithms"]
+featured: true
+hugoblox:
+  ids:
+    doi: "10.1038/s41534-025-00979-1"
+    arxiv: "2403.03761"
 links:
-  - {name: "DOI", url: "https://doi.org/10.1038/s41534-025-00979-1"}
-  - {name: "Article", url: "https://www.nature.com/articles/s41534-025-00979-1"}
-  - {name: "arXiv", url: "https://arxiv.org/abs/2403.03761"}
+  - type: preprint
+    provider: arxiv
+    id: "2403.03761"
+  - type: source
+    url: "https://www.nature.com/articles/s41534-025-00979-1"
+image:
+  preview_only: false
+projects: []
 ---
 A journal article on parameterized quantum combs and simpler circuits for reversing unknown qubit-unitary operations.

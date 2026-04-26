@@ -1,1 +1,0 @@
-{{ define "main" }}<section class="page-hero compact"><p class="eyebrow">{{ with .Params.kicker }}{{ . }}{{ else }}{{ .Section | humanize }}{{ end }}</p><h1>{{ .Title }}</h1>{{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}</section><section class="content prose">{{ .Content }}</section>{{ end }}

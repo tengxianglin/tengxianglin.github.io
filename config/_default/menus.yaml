@@ -1,0 +1,19 @@
+main:
+  - name: Home
+    url: /
+    weight: 10
+  - name: Publications
+    url: /publications/
+    weight: 20
+  - name: Engineering
+    url: /projects/
+    weight: 30
+  - name: CV
+    url: /cv/
+    weight: 40
+  - name: Blog
+    url: /blog/
+    weight: 50
+  - name: GitHub
+    url: https://github.com/tengxianglin
+    weight: 60

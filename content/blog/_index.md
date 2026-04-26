@@ -1,4 +1,4 @@
 ---
-title: "Blog"
-description: "Short notes on AI-assisted quantum research, quantum architecture, quantum computing, and engineering workflows."
+title: Blog
+summary: Short notes on AI-assisted quantum research, quantum architecture, quantum computing, and engineering workflows.
 ---

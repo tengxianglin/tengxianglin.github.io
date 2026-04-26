@@ -1,0 +1,50 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Tengxiang Lin
+  given: Tengxiang
+  family: Lin
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
+status:
+  icon: ""
+role: Ph.D. Student in Artificial Intelligence
+bio: |
+  I am a Ph.D. student in Artificial Intelligence at The Hong Kong University of Science and Technology (Guangzhou), working with Prof. Ge Bai and Prof. Xin Wang. My research interests lie at the intersection of artificial intelligence, quantum architecture, and quantum computing. I am currently interested in AI-assisted quantum research, quantum information processing, quantum algorithms, and systems that connect theoretical ideas with reproducible computational workflows.
+affiliations:
+  - name: Quantum AI Research Lab
+    url: ''
+  - name: AI Thrust, Information Hub, The Hong Kong University of Science and Technology (Guangzhou)
+    url: ''
+links:
+  - icon: brands/github
+    url: https://github.com/tengxianglin
+    label: GitHub
+  - icon: globe-alt
+    url: https://tengxianglin.github.io/
+    label: Website
+interests:
+  - Artificial Intelligence
+  - Quantum Architecture
+  - Quantum Computing
+  - Quantum Information Processing
+  - AI-assisted Quantum Research
+education:
+  - degree: Ph.D. in Artificial Intelligence
+    institution: The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China
+    start: 2025-09-01
+    summary: |
+      Supervisors: Prof. Ge Bai and Prof. Xin Wang.
+  - degree: B.E. in Information Engineering
+    institution: South China University of Technology, Guangzhou, China
+    start: 2019-09-01
+    end: 2023-06-30
+experience:
+  - role: Research Assistant
+    org: AI Thrust, HKUST(GZ)
+    start: 2023-10-01
+    end: 2025-08-31
+    summary: |
+      Supervisor: Prof. Xin Wang.

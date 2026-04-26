@@ -1,20 +1,23 @@
 ---
-title: "CV"
-description: "Academic CV summary for Tengxiang Lin."
-kicker: "Curriculum Vitae"
+title: CV
+summary: Academic CV summary for Tengxiang Lin.
 ---
+
 ## Education
 
 ### The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China
+
 **Ph.D. in Artificial Intelligence**, 2025 – Present  
 Supervisors: Prof. Ge Bai and Prof. Xin Wang
 
 ### South China University of Technology, Guangzhou, China
+
 **B.E. in Information Engineering**, 2019 – 2023
 
 ## Experience
 
 ### Research Assistant, AI Thrust, HKUST(GZ)
+
 2023.10 – 2025.08  
 Supervisor: Prof. Xin Wang
 
