@@ -34,15 +34,19 @@ hugoblox:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
     mode: system
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
-    pack: "default"
+    pack: "minimal"
     # Optional: Override theme pack colors
     colors:
-      primary: "blue"
-      secondary: "cyan"
+      primary: ""
+      secondary: ""
       neutral: ""                       # Affects gray utilities (text-gray-*, bg-gray-*)
     # Optional: Mode-specific color overrides
-    colors_light: {}
-    colors_dark: {}
+    colors_light:
+      primary: "#1261A0"
+      secondary: "#0E8F8A"
+    colors_dark:
+      primary: "#6CB6E8"
+      secondary: "#5FD1C8"
     # Optional: Semantic surface color overrides
     surfaces:
       background: ""
@@ -68,11 +72,11 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   layout:
     # Border radius: 'none', 'sm', 'md', 'lg', or 'full'
-    radius: "md"
+    radius: "sm"
     # Spacing density: 'compact', 'comfortable', or 'spacious'
-    spacing: "spacious"
+    spacing: "comfortable"
     # Avatar shape in author profiles
-    avatar_shape: circle                # circle | square | rounded
+    avatar_shape: rounded               # circle | square | rounded
 
   # ────────────────────────────────────────────────────────────────────────────
   # HEADER
@@ -85,12 +89,12 @@ hugoblox:
     # Stick to top on scroll
     sticky: true
     # Menu alignment
-    align: center                       # left | center | right
+    align: right                        # left | center | right
     # Feature toggles
     search: true
     theme_toggle: true
-    theme_picker: true
-    language_switcher: true
+    theme_picker: false
+    language_switcher: false
     # Call-to-action button
     cta:
       enable: false
@@ -104,9 +108,9 @@ hugoblox:
   footer:
     # Footer style variant
     style: minimal                      # minimal | columns | centered
-    language_switcher: true
+    language_switcher: false
     # Custom footer text (HTML supported)
-    text: "Email: tengxianglin23[at]gmail[dot]com · Quantum AI Research Lab · HKUST(GZ)"
+    text: "Quantum computing · AI-assisted scientific workflows · HKUST(GZ)"
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT

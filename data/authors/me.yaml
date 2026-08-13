@@ -12,19 +12,22 @@ status:
   icon: ""
 role: Ph.D. Student in Artificial Intelligence
 bio: |
-  I am a Ph.D. student in Artificial Intelligence at The Hong Kong University of Science and Technology (Guangzhou), working with Prof. Ge Bai and Prof. Xin Wang. My research interests lie at the intersection of artificial intelligence, quantum architecture, and quantum computing. I am currently interested in AI-assisted quantum research, quantum information processing, quantum algorithms, and systems that connect theoretical ideas with reproducible computational workflows.
+  I am a Ph.D. student in Artificial Intelligence at The Hong Kong University of Science and Technology (Guangzhou), working with Prof. Ge Bai and Prof. Xin Wang. I study quantum computing, quantum architecture, and AI-assisted scientific workflows, with an emphasis on connecting theoretical ideas to reproducible software.
 affiliations:
   - name: Quantum AI Research Lab
     url: ''
-  - name: AI Thrust, Information Hub, The Hong Kong University of Science and Technology (Guangzhou)
+  - name: HKUST(GZ) · AI Thrust
     url: ''
 links:
+  - icon: at-symbol
+    url: mailto:tengxianglin23@gmail.com
+    label: Email
   - icon: brands/github
     url: https://github.com/tengxianglin
     label: GitHub
-  - icon: globe-alt
-    url: https://tengxianglin.github.io/
-    label: Website
+  - icon: document-text
+    url: /cv/
+    label: Curriculum vitae
 interests:
   - Artificial Intelligence
   - Quantum Architecture

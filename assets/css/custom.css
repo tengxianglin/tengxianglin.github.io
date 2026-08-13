@@ -1,0 +1,270 @@
+:root {
+  --tx-blue: #1261a0;
+  --tx-teal: #0e8f8a;
+  --tx-ink: #17212b;
+  --tx-muted: #5b6978;
+  --tx-line: rgb(18 97 160 / 18%);
+  --tx-soft: #f4f8fb;
+}
+
+.dark {
+  --tx-blue: #6cb6e8;
+  --tx-teal: #5fd1c8;
+  --tx-ink: #eef6fb;
+  --tx-muted: #a9b7c5;
+  --tx-line: rgb(108 182 232 / 24%);
+  --tx-soft: #111a24;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--tx-ink);
+}
+
+#site-header.header {
+  border-bottom: 1px solid var(--tx-line);
+  box-shadow: none;
+}
+
+#site-header .navbar {
+  min-height: 4rem;
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-family: var(--hb-font-heading);
+  letter-spacing: -0.02em;
+}
+
+.navbar-brand,
+.nav-link,
+.theme-toggle,
+[data-search-toggle],
+label[for="nav-toggle"] {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+a:focus-visible,
+button:focus-visible,
+#nav-toggle:focus-visible + label {
+  outline: 3px solid var(--tx-teal);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+
+.homepage-hero {
+  padding: 0;
+  border-bottom: 1px solid var(--tx-line);
+}
+
+.homepage-hero::after {
+  position: absolute;
+  right: max(1.5rem, calc((100vw - 72rem) / 2));
+  bottom: 1.5rem;
+  left: max(1.5rem, calc((100vw - 72rem) / 2));
+  height: 9px;
+  content: "";
+  background:
+    radial-gradient(circle at 8% 50%, var(--tx-teal) 0 3px, transparent 4px),
+    radial-gradient(circle at 42% 50%, var(--tx-blue) 0 3px, transparent 4px),
+    radial-gradient(circle at 72% 50%, var(--tx-teal) 0 3px, transparent 4px),
+    radial-gradient(circle at 94% 50%, var(--tx-blue) 0 3px, transparent 4px),
+    linear-gradient(90deg, transparent 8%, var(--tx-line) 8% 94%, transparent 94%);
+  opacity: 0.9;
+}
+
+.homepage-hero .resume-biography {
+  padding-top: clamp(4rem, 8vw, 7rem);
+  padding-bottom: clamp(5rem, 9vw, 8rem);
+}
+
+.homepage-hero .avatar {
+  border-color: var(--tx-line);
+  box-shadow: 0 18px 48px rgb(11 34 57 / 16%);
+}
+
+.homepage-hero h1 {
+  letter-spacing: -0.035em;
+}
+
+.homepage-hero .bio-text {
+  max-width: 66ch;
+}
+
+.homepage-section {
+  padding-block: clamp(4rem, 8vw, 7rem);
+  border-bottom: 1px solid var(--tx-line);
+}
+
+.homepage-section > .home-section-bg + .flex.flex-col {
+  align-items: flex-start;
+  width: min(100% - 3rem, 64rem);
+  max-width: 64rem;
+  padding-inline: 0;
+}
+
+.homepage-section > .home-section-bg + .flex.flex-col > .mb-6 {
+  margin-bottom: 0.5rem;
+  color: var(--tx-ink);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  letter-spacing: -0.03em;
+}
+
+.research-thesis,
+.engineering-grid {
+  background: var(--tx-soft);
+}
+
+.research-thesis .prose {
+  max-width: 68ch;
+  color: var(--tx-muted);
+}
+
+.homepage-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.homepage-action {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--tx-line);
+  border-radius: 0.35rem;
+  color: var(--tx-ink) !important;
+  font-family: var(--hb-font-heading);
+  font-size: 0.95rem;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: border-color 180ms ease, color 180ms ease, background-color 180ms ease;
+}
+
+.homepage-action:hover {
+  border-color: var(--tx-teal);
+  color: var(--tx-teal) !important;
+}
+
+.homepage-action-primary {
+  border-color: var(--tx-blue);
+  background: var(--tx-blue);
+  color: white !important;
+}
+
+.homepage-action-primary:hover {
+  border-color: var(--tx-teal);
+  background: var(--tx-teal);
+  color: #071a21 !important;
+}
+
+.dark .homepage-action-primary {
+  color: #071a21 !important;
+}
+
+.homepage-section [role="article"] {
+  border: 1px solid var(--tx-line);
+  border-radius: 0.55rem;
+  box-shadow: 0 12px 32px rgb(11 34 57 / 7%);
+  backdrop-filter: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.homepage-section [role="article"]:hover {
+  border-color: var(--tx-teal);
+  box-shadow: 0 16px 38px rgb(11 34 57 / 11%);
+  transform: translateY(-2px) !important;
+}
+
+.featured-work [role="article"] > div:first-child a > div {
+  background:
+    radial-gradient(circle at 18% 38%, rgb(95 209 200 / 82%) 0 5px, transparent 6px),
+    radial-gradient(circle at 51% 64%, rgb(108 182 232 / 82%) 0 5px, transparent 6px),
+    radial-gradient(circle at 82% 32%, rgb(95 209 200 / 82%) 0 5px, transparent 6px),
+    linear-gradient(18deg, transparent 0 25%, rgb(255 255 255 / 12%) 25% 26%, transparent 26% 62%, rgb(255 255 255 / 12%) 62% 63%, transparent 63%),
+    linear-gradient(135deg, #0b2239, #1261a0 58%, #0e8f8a);
+}
+
+.featured-work [role="article"] > div:first-child a > div > div {
+  display: none;
+}
+
+.engineering-grid [role="article"] > div:first-child {
+  display: none;
+}
+
+.engineering-grid [role="article"] > div:last-child {
+  min-height: 17rem;
+}
+
+.publication-list .view-citation {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--tx-line);
+  line-height: 1.75;
+}
+
+.publication-list .view-citation:last-child {
+  border-bottom: 0;
+}
+
+.notes-list article h2 {
+  font-size: 1.05rem;
+}
+
+.homepage-section a[href$="/publications/"],
+.homepage-section a[href$="/projects/"],
+.homepage-section a[href$="/blog/"] {
+  min-height: 44px;
+}
+
+@media (max-width: 767px) {
+  #site-header .navbar {
+    padding-inline: 1rem;
+  }
+
+  #nav-menu {
+    padding-top: 1rem;
+  }
+
+  .homepage-hero .resume-biography {
+    padding-top: 3rem;
+  }
+
+  .homepage-section > .home-section-bg + .flex.flex-col {
+    width: min(100% - 2rem, 64rem);
+  }
+
+  .homepage-section [role="article"] > div:last-child {
+    padding: 1.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .homepage-section *,
+  .homepage-hero * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

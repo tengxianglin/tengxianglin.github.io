@@ -1,77 +1,104 @@
 ---
 title: ''
-summary: ''
-date: 2026-04-26
+summary: 'Tengxiang Lin researches quantum computing, quantum architecture, and AI-assisted scientific workflows.'
 type: landing
 
 sections:
   - block: resume-biography-3
+    id: profile
     content:
       username: me
-      text: 'AI × Quantum Architecture × Quantum Computing'
+      text: |-
+        I work where **quantum algorithms meet AI-assisted research systems**—from reversing unknown quantum operations to building reproducible computational workflows.
+
+        My current focus is quantum information processing, quantum architecture, and practical tools that connect theoretical ideas with working software.
       headings:
-        about: About
-        education: Education
-        interests: Interests
+        about: Research profile
+        education: Background
+        interests: Current interests
+      show_education: false
+      show_interests: false
     design:
-      background:
-        gradient_mesh:
-          enable: true
+      css_class: homepage-hero
       name:
         size: md
       avatar:
         size: medium
-        shape: circle
+        shape: rounded
   - block: markdown
+    id: approach
     content:
-      title: 'AI × Quantum Architecture × Quantum Computing'
-      subtitle: 'Ph.D. Student working at the intersection of AI, quantum architecture, and quantum computing.'
+      title: 'Research, built end to end'
       text: |-
-        I am a Ph.D. student in Artificial Intelligence at The Hong Kong University of Science and Technology (Guangzhou), affiliated with the Quantum AI Research Lab. My research interests lie at the intersection of artificial intelligence, quantum architecture, and quantum computing.
+        I care about the full path from a precise research question to a result that can be reproduced. My work combines quantum algorithms, learning-based methods, and research engineering without treating implementation as an afterthought.
 
-        I am currently interested in AI-assisted quantum research, quantum information processing, quantum algorithms, and systems that connect theoretical ideas with reproducible computational workflows.
-
-        <p><a class="btn btn-primary" href="/publications/">Publications</a> <a class="btn" href="/projects/">Engineering</a> <a class="btn" href="/cv/">CV</a> <a class="btn" href="https://github.com/tengxianglin">GitHub</a></p>
+        <p class="homepage-actions"><a class="homepage-action homepage-action-primary" href="/publications/">Explore publications</a><a class="homepage-action" href="/projects/">View research engineering</a></p>
     design:
-      columns: '1'
-  - block: markdown
-    content:
-      title: ''
-      text: |-
-        <img src="/media/hero-quantum-architecture.svg" alt="Quantum architecture visual" style="width:100%;max-width:920px;margin:auto;display:block;border-radius:1rem;">
-    design:
-      columns: '1'
+      css_class: homepage-section research-thesis
   - block: collection
-    id: research
+    id: papers
     content:
-      title: Research
-      subtitle: Selected publications and preprints.
+      title: Featured work
+      count: 4
       filters:
         folders:
           - publications
         featured_only: true
+      archive:
+        enable: true
+        text: View all publications
+        link: /publications/
     design:
+      css_class: homepage-section featured-work
+      view: article-grid
+      columns: 2
+      show_read_time: false
+      show_read_more: false
+  - block: collection
+    id: publications
+    content:
+      title: Recent publications
+      count: 6
+      filters:
+        folders:
+          - publications
+      archive:
+        enable: true
+        text: View all publications
+        link: /publications/
+    design:
+      css_class: homepage-section publication-list
       view: citation
   - block: collection
     id: engineering
     content:
-      title: Engineering
-      subtitle: Research software and AI-assisted engineering systems.
+      title: Research engineering
+      count: 4
       filters:
         folders:
           - projects
+      archive:
+        enable: true
+        text: View all projects
+        link: /projects/
     design:
-      view: card
+      css_class: homepage-section engineering-grid
+      view: article-grid
       columns: 2
-  - block: markdown
-    id: news
+      show_date: false
+      show_read_time: false
+  - block: collection
+    id: notes
     content:
-      title: News
-      text: |-
-        - **2025:** Started Ph.D. in Artificial Intelligence at HKUST(GZ).
-        - **2025:** QSF work published in Communications Physics.
-        - **2025:** Paper on parameterized quantum combs published in npj Quantum Information.
-        - **2024:** QSF preprint released on arXiv.
+      title: Notes & updates
+      page_type: blog
+      count: 3
+      order: desc
+      archive:
+        enable: true
+        text: View all notes
+        link: /blog/
     design:
-      columns: '1'
+      css_class: homepage-section notes-list
+      view: date-title-summary
 ---

@@ -20,6 +20,16 @@
 {{ $avatar := $profile.avatar }}
 {{ $headings := index $content "headings" }}
 {{ if not (reflect.IsMap $headings) }}{{ $headings = dict }}{{ end }}
+{{ $show_education := true }}
+{{ $show_education_raw := index $content "show_education" }}
+{{ if eq (printf "%T" $show_education_raw) "bool" }}
+  {{ $show_education = $show_education_raw }}
+{{ end }}
+{{ $show_interests := true }}
+{{ $show_interests_raw := index $content "show_interests" }}
+{{ if eq (printf "%T" $show_interests_raw) "bool" }}
+  {{ $show_interests = $show_interests_raw }}
+{{ end }}
 
 {{/* Avatar customization parameters */}}
 {{ $avatar_size := "large" }}
@@ -323,7 +333,7 @@
               {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
             {{ end }}
             <a href="{{ $linkUrl | safeURL }}" {{ $target | safeHTMLAttr }} 
-               aria-label="{{ $iconName }}"
+               aria-label="{{ $linkLabel | default $iconName }}"
                {{ if $linkLabel }} title="{{ $linkLabel }}"{{ end }}
                class="w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 
                       shadow-md hover:shadow-xl hover:scale-110 hover:-translate-y-1 
@@ -411,7 +421,7 @@
         {{ if reflect.IsSlice $education_raw }}
           {{ $education = $education_raw }}
         {{ end }}
-        {{ if gt (len $education) 0 }}
+        {{ if and $show_education (gt (len $education) 0) }}
         <div class="mb-16">
           <div class="flex items-center gap-4 mb-8">
             <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
@@ -489,7 +499,7 @@
         {{ else if eq (printf "%T" $interests_raw) "string" }}
           {{ $interests = slice $interests_raw }}
         {{ end }}
-        {{ if gt (len $interests) 0 }}
+        {{ if and $show_interests (gt (len $interests) 0) }}
         <div>
           <div class="flex items-center gap-4 mb-8">
             <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
